@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub User Lookup</h1>
+        <input type="text" id="username" placeholder="Search login" />
+        <button onclick="getUserInfo()">Search</button>
+        <div id="user-info" class="user-info hidden">
+            <img id="profile-photo" src="" alt="Profile Photo" />
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Login:</strong> <span id="login"></span></p>
+            <p><strong>URL to GitHub:</strong> <a id="github-url" href="" target="_blank"></a></p>
+            <p><strong>Blog:</strong> <a id="blog-url" href="" target="_blank"></a></p>
+            <p><strong>City:</strong> <span id="location"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Followers:</strong> <span id="followers"></span></p>
+            <p><strong>Following:</strong> <span id="following"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
